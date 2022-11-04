@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
   <title>Frontend Mentor | Easybank landing page</title>
@@ -26,15 +26,17 @@
 <body>
   <nav class="menu">
     <img src="./images/logo.svg" alt="easybank-logo" class="menu__logo" />
-    <div class="hamburger">.</div>
-    <ul class="list">
-      <li class="list__item">Home</li>
-      <li class="list__item">About</li>
-      <li class="list__item">Contact</li>
-      <li class="list__item">Blog</li>
-      <li class="list__item">Careers</li>
-    </ul>
-    <button class="btn">Request Invite</button>
+    <img src="images/hamburger.svg" alt="hamburger" class="hamburger">
+    <div class="menu__wrapper">
+      <ul class="menu__list">
+        <li class="menu__item">Home</li>
+        <li class="menu__item">About</li>
+        <li class="menu__item">Contact</li>
+        <li class="menu__item">Blog</li>
+        <li class="menu__item">Careers</li>
+      </ul>
+      <button class="btn">Request Invite</button>
+    </div>
   </nav>
   <hero class="info">
     <div class="info__wrapper">
@@ -173,8 +175,60 @@
             </div>
           </div>
   </section>
-  About Us Contact Blog Careers Support Privacy Policy Request
-  Invite © Easybank. All Rights Reserved
+  <footer class="footer">
+    <ul class="footer__list footer__list--logo">
+      <li class="footer__item">
+        <img src="./images/logo.svg" alt="logo-footer" class="footer__logo">
+      </li>
+    </ul>
+    <ul class="footer__list footer__list--social">
+      <li class="footer__item">
+        <img src="./images/icon-facebook.svg" alt="icon-facebook" class="footer__logo">
+      </li>
+      <li class="footer__item">
+        <img src="./images/icon-youtube.svg" alt="icon-youtube" class="footer__logo">
+      </li>
+      <li class="footer__item">
+        <img src="./images/icon-twitter.svg" alt="icon-twitter" class="footer__logo">
+      </li>
+      <li class="footer__item">
+        <img src="./images/icon-pinterest.svg" alt="icon-pinterest" class="footer__logo">
+      </li>
+      <li class="footer__item">
+        <img src="./images/icon-instagram.svg" alt="icon-instagram" class="footer__logo">
+      </li>
+    </ul>
+    <ul class="footer__list footer__list--contact">
+      <li class="footer__item">
+        About Us
+      </li>
+      <li class="footer__item">
+        Contact
+      </li>
+      <li class="footer__item">
+        Blog
+      </li>
+    </ul>
+    <ul class="footer__list footer__list--careers">
+      <li class="footer__item">
+        Careers
+      </li>
+      <li class="footer__item">
+        Support
+      </li>
+      <li class="footer__item">
+        Privacy Policy
+      </li>
+    </ul>
+    <ul class="footer__list footer__list--button">
+      <li class="footer__item">
+        <button class="btn">Request Invite</button>
+      </li>
+    </ul>
+    <p class="footer__copyright">
+      © Easybank. All Rights Reserved
+    </p>
+  </footer>
 
   <div class="attribution">
     Challenge by

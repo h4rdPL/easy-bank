@@ -1,0 +1,29 @@
+// navigation
+
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: $white;
+
+    &__wrapper {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: $white;
+        text-align: center;
+        opacity: 0;
+    }
+
+
+    &__item {
+        padding: .5rem;
+    }
+}
+
+.hamburger {
+    width: 32px;
+}
